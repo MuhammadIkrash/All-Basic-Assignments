@@ -1,0 +1,172 @@
+.log {
+  color: #99a1af !important;
+}
+.h {
+  font-size: 18px !important;
+}
+
+.containerMain {
+  background-image: linear-gradient(#0f172b, #000000);
+}
+.sig {
+  color: white;
+  background: #1447e6;
+  border: none;
+  width: 80px;
+}
+.div1 {
+  background-image: linear-gradient(to bottom, #e6cef8, #bd78ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 40px;
+}
+.forn {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px;
+}
+.colBox {
+  background-color: #0f172b;
+  border: 1px solid #5a595980;
+  padding: 1px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.colBox:hover {
+  border: 1px solid #cecccc80;
+}
+.plus {
+  border: 1px dashed #cecccc80;
+  /* background-color: #0f172b; */
+  padding: 1px;
+  font-size: 12px;
+}
+.plus:hover {
+  background-color: #0f172b;
+}
+
+.lineBox{
+  background-color: #0f172b;
+  border: 1px solid #5a595980;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 140px;
+  border-radius: 4px;
+  position: relative;
+  bottom: 30px;
+}
+.mar{
+    margin-bottom: 70px !important;
+}
+
+.helight{
+    background-color: #7bf1a8;
+    font-weight: 500;
+    padding: 2px;
+    font-size: 12px;
+    margin-left: 4px;
+    color: #000000;
+}
+.faq{
+    font-size: 13px;
+    cursor: pointer;
+    color: #4a5565;
+    width: 500px;
+    text-align: start;
+}
+.faqHeading{
+    margin-left:75px ;
+    margin-bottom: 15px;
+}
+.faqLeft{
+    font-size: 12px;
+}
+.faq:hover{
+    color: #1447e6;
+    margin-left: 10px;
+}
+.faqBox{
+margin-bottom: -30px;
+}
+.lin{
+    width: 700px;
+    display: flex;
+    margin-left:60px ;
+}
+.left{
+    border-right:2px solid #c5c2c2 ;
+    font-size: 12px;
+    color: #c5c2c2;
+}
+.left::after{
+    content: " <i class="date_dot fa-solid fa-circle"></i>";
+}
+.chg{
+  margin-left:140px ;
+}
+.chg:hover{
+  background-color: rgb(47, 46, 46)!important;
+}
+#hov:hover{
+  background-color: #090809 !important;
+  color: white !important;
+}
+#hov{
+  border: 1px solid black;
+}
+.box{
+border: 1px solid black;
+border-radius: 8px;
+padding: 2px;
+cursor: pointer;
+}
+.box:hover{
+background-color: #000000;
+color: #ffffff;
+}
+@media screen and (max-width: 800px) {
+
+.mar{
+    margin-bottom: 70px !important;
+}
+
+.helight{
+    background-color: #7bf1a8;
+    font-weight: 500;
+    padding: 2px;
+    font-size: 12px;
+    margin-left: 4px;
+    color: #000000;
+}
+.faq{
+    font-size: 13px;
+    cursor: pointer;
+    color: #4a5565;
+    width: 500px;
+    text-align: start;
+}
+.faqHeading{
+    margin-left:0px ;
+    margin-bottom: 15px;
+}
+.faqLeft{
+    font-size: 12px;
+}
+.faq:hover{
+    color: #1447e6;
+    margin-left: 10px;
+}
+.faqBox{
+margin-bottom: -30px;
+}
+.lin{
+    width: 100%;
+    display: flex;
+    margin-left:20px ;
+}
+
+
+}

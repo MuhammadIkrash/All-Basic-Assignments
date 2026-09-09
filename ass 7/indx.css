@@ -1,0 +1,97 @@
+.mainheading {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    text-decoration: underline overline;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.para1 {
+    text-transform: lowercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.para1:first-letter {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.para1::first-line {
+    text-transform: uppercase;
+}
+
+#span1 {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+
+}
+
+#span1:first-letter {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+
+}
+
+a:link {
+    color: rgb(255, 20, 20);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(194, 135, 135);
+}
+
+a:hover {
+    color: rgb(148, 101, 126);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(155, 233, 233);
+}
+
+.para2 {
+    text-transform: lowercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.para2::first-letter {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.para3{
+      text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+.para3:first-letter {
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: capitalize;
+}

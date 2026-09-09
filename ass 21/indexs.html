@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #eee; }
+        .player { display: inline-block;
+             width: 40%; 
+            background: white; padding: 20px; margin: 10px; border-radius: 10px; }
+        .active { border: 4px solid #cc2e4c; }
+        .current-box { background: #cc2e4c; color: white; padding: 10px; margin-top: 10px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; border-radius: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+    <h2>Dice Game</h2>
+
+    <div id="p0" class="player active">
+        <h3>Player 1</h3>
+        <h1 id="total-0">0</h1>
+        <div class="current-box">
+            Current: <span id="curr-0">0</span>
+        </div>
+    </div>
+
+    <div id="p1" class="player">
+        <h3>Player 2</h3>
+        <h1 id="total-1">0</h1>
+        <div class="current-box">
+            Current: <span id="curr-1">0</span>
+        </div>
+    </div>
+
+    <br>
+    <button onclick="roll()">Roll Dice</button>
+    <button onclick="hold()">Hold Score</button>
+    <button onclick="reset()">New Game</button>
+
+    <script>
+        let totals = [0, 0];
+        let current = 0;
+        let active = 0;
+
+        function roll() {
+            let dice = Math.floor(Math.random() * 6) + 1;
+            alert("You rolled a: " + dice);
+            
+            if (dice !== 1) {
+                current += dice;
+                document.getElementById(`curr-${active}`).innerText = current;
+            } else {
+                alert("Rolled a 1! Turn lost.");
+                switchTurn();
+            }
+        }
+
+        function hold() {
+            totals[active] += current;
+            document.getElementById(`total-${active}`).innerText = totals[active];
+            
+            if (totals[active] >= 50) {
+                alert("Player " + (active + 1) + " Wins!");
+                reset();
+            } else {
+                switchTurn();
+            }
+        }
+
+        function switchTurn() {
+            current = 0;
+            document.getElementById(`curr-${active}`).innerText = 0;
+            document.getElementById(`p${active}`).classList.remove('active');
+            
+            active = active === 0 ? 1 : 0; 
+            
+            document.getElementById(`p${active}`).classList.add('active');
+        }
+
+        function reset() {
+            totals = [0, 0];
+            current = 0;
+            active = 0;
+            location.reload();
+        }
+    </script>
+</body>
+</html>

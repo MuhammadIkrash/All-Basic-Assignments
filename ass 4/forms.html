@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pizza</title>
+</head>
+
+<body>
+    <h1>Pizza Order </h1>
+    <hr />
+    <form action="#" mrthod="get">
+        <div>
+            <label for="UserName"> Custamor Name </label>
+            <input type="text" id="UserName" placeholder="Your Name" name="Castomar name" value="Muhammmad Ikrash"
+                required="required">
+        </div>
+        <hr />
+        <div>
+            <label for="email"> Castomar Email</label>
+            <input type="email" id="email" placeholder="mikrash@gmail.com" name="email" required="required">
+        </div>
+        <hr />
+        <div>
+            <label for="Quantity">Quantity</label>
+            <input type="number" id="Quantity" value="Quantity" name="Quantity" required="required">
+        </div>
+        <div>
+            <span> <strong>Size:</strong></span>
+            <input type="radio" value="small" name="size" id="size" required="required">
+            <label for="size">small</label>
+            <input type="radio" value="medium" name="size" id="size" required="required">
+            <label for="size">medium</label>
+            <input type="radio" value="Large" name="size" id="size" required="required">
+            <label for="size">Large</label>
+        </div>
+        <hr />
+        <div>
+            <span><strong>Topping :</strong></span>
+            <input type="checkbox" value="Corn" id="Topping" name="Topping">
+            <label for="Topping">Corn</label>
+            <input type="checkbox" value="Olive" id="Topping" name="Topping">
+            <label for="Topping">Olive</label>
+            <input type="checkbox" value="Tamato" id="Topping" name="Topping">
+            <label for="Topping">Tamato</label>
+        </div>
+        <hr />
+        <div>
+            <!-- <span>Order Type :</span> -->
+            <label for="pickup">Order Type:</label>
+            <select id="pickup" name="Order Type">
+                <option value="Pickup">pickup</option>
+                <option value="Delivery" selected>Delivery</option>
+            </select>
+        </div>
+        <hr />
+        <div>
+            <label for="Detail">Detail or Instraction </label>
+            <Br />
+            <textarea name="Detail" id="Detail" placeholder="Special Instraction" rows="3"></textarea>
+        </div>
+        <hr />
+        <div>
+            <input type="submit" value="Place Order">
+        </div>
+
+    </form>
+</body>
+
+</html>

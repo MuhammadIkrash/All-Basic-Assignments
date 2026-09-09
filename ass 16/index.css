@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22836a;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  padding: 12px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.logo h1 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.formobile {
+  display: none;
+}
+nav .icon {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.left {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  background-color: #fdfdfd;
+  width: 380px;
+  height: auto;
+  padding: 5px;
+  /* overflow: scroll; */
+}
+
+.numBox {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 360px;
+  gap: 18px;
+  margin-top: 10px;
+}
+.numBox img {
+  width: 60px;
+  border-radius: 100px;
+  margin-left: 15px;
+  /* margin-top: 10px; */
+}
+.name{
+    width: 180px;
+}
+.name h1 {
+  color: #0e0f11;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.name p {
+  color: #7e7f82;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.numBox:hover {
+  background-color: #e6f2eb;
+  padding: 5px;
+}
+.time {
+  color: #7e7f82;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+  font-weight: 400;
+  width: 40px;
+}
+.ic {
+    color: #fff;
+    background-color: #20c54a;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2px;
+margin-left: 45px;
+margin-top: 3px;
+}
+main{
+    display: flex;
+
+}
+.rightSide{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    background-color: #EFEFEF;
+    width: 70.3vw;
+    height: 84vh;
+}
+.mess{
+    width: 70.3vw;
+    background-color: #f3f0f0;
+    height: 63px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+.mess input{
+    width: 700px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    border: none;
+}
+.mess i {
+    font-size: 25px;
+    color: #fff;
+    background-color: #22836a;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 700px) {
+    .rightSide{
+        display: none;
+    }
+    .numBox {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 280px;
+  gap: 18px;
+  margin-top: 10px;
+}
+.numBox img {
+  width: 50px;
+  border-radius: 100px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+}
+.name{
+    width: 150px;
+}
+.time {
+  color: #7e7f82;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+  font-weight: 400;
+  width: 30px;
+}
+.left {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  background-color: #fdfdfd;
+  width: 300px;
+  height: auto;
+  padding: 5px;
+  /* overflow: scroll; */
+}
+nav .icon {
+  gap: 15px;
+  font-size: 20px;
+}
+.formobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  background-color: #22836a;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+font-size: 14px;
+font-weight: 400;
+/* margin-left:2px ; */
+/* margin-right: 2px; */
+height: 60px;
+}
+.ch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: -10; */
+     position: relative;
+    left: 22px;
+    border-bottom: 3px solid #fdfdfd;
+    text-align: center;
+    
+}
+.cl{
+    position: relative;
+    right: 42px;
+}
+.numBox:hover {
+  background-color: #e6f2eb;
+  padding: 5px;
+  width: 100%;
+}
+}
